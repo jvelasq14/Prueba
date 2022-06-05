@@ -1,0 +1,99 @@
+[debug] [2022-06-02T21:55:04.469Z] ----------------------------------------------------------------------
+[debug] [2022-06-02T21:55:04.472Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\JORGE\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-06-02T21:55:04.473Z] CLI Version:   11.0.1
+[debug] [2022-06-02T21:55:04.473Z] Platform:      win32
+[debug] [2022-06-02T21:55:04.473Z] Node Version:  v16.14.2
+[debug] [2022-06-02T21:55:04.474Z] Time:          Thu Jun 02 2022 16:55:04 GMT-0500 (hora estándar de Colombia)
+[debug] [2022-06-02T21:55:04.475Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-02T21:55:04.480Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-06-02T21:55:04.520Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-02T21:55:04.521Z] > authorizing via signed-in user (velasquezsierrajorge@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\JORGE\Desktop\Parcialfinal\my-app
+
+[debug] [2022-06-02T21:55:06.529Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-06-02T21:55:06.530Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-06-02T21:57:23.187Z] > refreshing access token with scopes: []
+[debug] [2022-06-02T21:57:23.189Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-06-02T21:57:23.666Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Thu, 02 Jun 2022 21:57:23 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-06-02T21:57:24.266Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-06-02T21:57:25.116Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-06-02T21:57:25.116Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project crud-app-1e1ef (Crud-app) 
+[info] 
+=== Firestore Setup
+[debug] [2022-06-02T21:57:30.901Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/crud-app-1e1ef/services/firestore.googleapis.com [none]
+[debug] [2022-06-02T21:57:32.302Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/crud-app-1e1ef/services/firestore.googleapis.com 200
+[debug] [2022-06-02T21:57:32.302Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/crud-app-1e1ef/services/firestore.googleapis.com [omitted]
+[debug] [2022-06-02T21:57:32.303Z] >>> [apiv2][query] GET https://appengine.googleapis.com/v1/apps/crud-app-1e1ef [none]
+[debug] [2022-06-02T21:57:33.050Z] <<< [apiv2][status] GET https://appengine.googleapis.com/v1/apps/crud-app-1e1ef 200
+[debug] [2022-06-02T21:57:33.050Z] <<< [apiv2][body] GET https://appengine.googleapis.com/v1/apps/crud-app-1e1ef {"name":"apps/crud-app-1e1ef","id":"crud-app-1e1ef","authDomain":"gmail.com","locationId":"us-central","codeBucket":"staging.crud-app-1e1ef.appspot.com","servingStatus":"SERVING","defaultHostname":"crud-app-1e1ef.uc.r.appspot.com","defaultBucket":"crud-app-1e1ef.appspot.com","serviceAccount":"crud-app-1e1ef@appspot.gserviceaccount.com","gcrDomain":"us.gcr.io","databaseType":"CLOUD_FIRESTORE","featureSettings":{"splitHealthChecks":true,"useContainerOptimizedOs":true}}
+[debug] [2022-06-02T21:57:33.050Z] database_type: CLOUD_FIRESTORE
+[debug] [2022-06-02T21:57:33.051Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-02T21:57:33.051Z] > authorizing via signed-in user (velasquezsierrajorge@gmail.com)
+[debug] [2022-06-02T21:57:33.051Z] [iam] checking project crud-app-1e1ef for permissions ["firebase.projects.get"]
+[debug] [2022-06-02T21:57:33.052Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/crud-app-1e1ef:testIamPermissions [none]
+[debug] [2022-06-02T21:57:33.052Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/crud-app-1e1ef:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-06-02T21:57:33.818Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/crud-app-1e1ef:testIamPermissions 200
+[debug] [2022-06-02T21:57:33.819Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/crud-app-1e1ef:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-06-02T21:57:37.099Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/crud-app-1e1ef/releases pageSize=10&pageToken=
+[debug] [2022-06-02T21:57:37.565Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/crud-app-1e1ef/releases 200
+[debug] [2022-06-02T21:57:37.565Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/crud-app-1e1ef/releases {"releases":[{"name":"projects/crud-app-1e1ef/releases/cloud.firestore","rulesetName":"projects/crud-app-1e1ef/rulesets/4b1723cb-817a-440d-83e7-2d5f8dfef4c6","createTime":"2022-05-18T18:22:59.756249Z","updateTime":"2022-05-18T18:22:59.756249Z"}]}
+[debug] [2022-06-02T21:57:37.565Z] Found ruleset: projects/crud-app-1e1ef/rulesets/4b1723cb-817a-440d-83e7-2d5f8dfef4c6
+[debug] [2022-06-02T21:57:37.566Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/crud-app-1e1ef/rulesets/4b1723cb-817a-440d-83e7-2d5f8dfef4c6 [none]
+[debug] [2022-06-02T21:57:37.899Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/crud-app-1e1ef/rulesets/4b1723cb-817a-440d-83e7-2d5f8dfef4c6 200
+[debug] [2022-06-02T21:57:37.899Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/crud-app-1e1ef/rulesets/4b1723cb-817a-440d-83e7-2d5f8dfef4c6 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-06-02T21:57:43.402Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/crud-app-1e1ef/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2022-06-02T21:57:43.404Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/crud-app-1e1ef/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false [none]
+[debug] [2022-06-02T21:57:44.581Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/crud-app-1e1ef/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2022-06-02T21:57:44.581Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/crud-app-1e1ef/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2022-06-02T21:57:44.607Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/crud-app-1e1ef/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false 200
+[debug] [2022-06-02T21:57:44.607Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/crud-app-1e1ef/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false {"fields":[{"name":"projects/crud-app-1e1ef/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-06-02T21:57:52.129Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-06-02T21:57:52.363Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-06-02T21:57:52.363Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.8.2","browserURL":"https://www.gstatic.com/firebasejs/9.8.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.8.2/firebase.tgz"},"live":{"version":"9.8","browserURL":"https://www.gstatic.com/firebasejs/live/9.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.8/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.8.2/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.8.2/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.8.2/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.8.2/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.8.2/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.8.2/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.8.2/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.8.2/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.8.2/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.8.2/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.memory.js"}}
+[debug] [2022-06-02T21:57:52.807Z] Error: ENOTDIR: not a directory, scandir 'C:\Users\JORGE\Desktop\Parcialfinal\my-app\y'
+    at Object.readdirSync (node:fs:1392:3)
+    at Object.createFileSync (C:\Users\JORGE\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:55:10)
+    at Config.writeProjectFile (C:\Users\JORGE\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:151:12)
+    at C:\Users\JORGE\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:175:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async doSetup (C:\Users\JORGE\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\index.js:52:5)
+    at async init (C:\Users\JORGE\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:36:9)
+[error] 
+[error] Error: An unexpected error has occurred.
