@@ -57,7 +57,7 @@ const guardarDatos=async(e)=>{
        return
  }
 
- if(cedula.length < 5){
+ if(cedula.length < 6){
   setError('La Cedula debe tener al menos 6 digitos')
   return
 }
