@@ -48,14 +48,21 @@ const guardarDatos=async(e)=>{
     setError('Ingrese su genero')
     return
   }
-  if(edad < 17){
-    setError('La Persona de ser mayor de 18')
+  if(edad < 17 && edad > 110 ){
+    setError('Ingrese una edad valida')
     return
  }
  if(encontrado.length > 0){
        setError('Este usuario ya existe')
        return
  }
+
+ if(cedula.length < 5){
+  setError('La Cedula debe tener al menos 6 digitos')
+  return
+}
+
+
   try {
     
     const nuevoUsuario = {cedula,profesion,estado,edad,genero}
@@ -68,7 +75,6 @@ const guardarDatos=async(e)=>{
   }
   setCedula('')
   setProfesion('')
-  setEstado('')
   setEdad('')
   setGenero('')
   setError('')
